@@ -1,0 +1,28 @@
+.product {
+    padding-top: 80px;
+    width: 85%;
+    margin: auto;
+    box-sizing: border-box;    
+}
+
+.product-item {
+    cursor: pointer;
+} 
+.product-img {
+    overflow: hidden;
+}
+
+.product-info {
+    padding: 15px 0 30px 0;
+}
+.product-list {
+    display: flex;
+}
+.product-menu-item {
+    font-size: 1rem;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.product-menu-item:hover {
+    color: gray;
+}

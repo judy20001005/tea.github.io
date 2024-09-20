@@ -1,0 +1,48 @@
+.products {
+    background-color: rgb(241, 241, 241);   
+}
+
+.products-heading {
+    border-top: 1px solid black;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.products-right {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 0;
+}
+
+.products-img {
+    overflow: hidden;
+}
+.product-info {
+    padding: 15px 0 30px;
+}
+
+.images-inner{
+    height: 70vh;
+    background-size: cover;
+    background-position: center 60%;
+}
+
+.contact-heading{
+    border-top: 1px solid rgb(92, 92, 92);
+    padding: 20px 0;
+}
+.contact-title{
+    padding-bottom: 20px;
+}
+.contact-item{
+    padding: 10px 0;
+}
+
+
+@media screen and (max-width:980px){
+    .images-inner{
+        height: 40vh;
+        background-size: cover;
+        background-position: center 60%;
+    }
+
+}
