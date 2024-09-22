@@ -1,0 +1,83 @@
+.products {
+    background-color: rgb(241, 241, 241);   
+}
+
+.products-heading {
+    border-top: 1px solid black;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.products-right {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 0;
+}
+
+.products-img {
+    overflow: hidden;
+}
+.products-img img {
+    transform: scale(1);
+    transition: 1s ease-out;
+}
+.products-img img:hover {
+    transform: scale(1.2);
+}
+.product-info {
+    padding: 15px 0 30px;
+}
+
+.images-inner{
+    height: 70vh;
+    background-size: cover;
+    background-position: center 60%;
+}
+
+.contact-heading{
+    border-top: 1px solid rgb(92, 92, 92);
+    padding: 20px 0;
+}
+.contact-title{
+    padding-bottom: 20px;
+}
+.contact-item{
+    padding: 10px 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100vh;  /* 设置轮播图的高度 */
+    position: relative;
+    overflow: hidden;
+  }
+  .swiper-pagination {
+    position: absolute;
+    bottom: 20px; /* 调整分页器与轮播图底部的距离 */
+    left: 50%; /* 水平居中 */
+    transform: translateX(-50%); /* 水平居中修正 */
+    z-index: 10; /* 确保分页器显示在最前 */
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+  }
+  .swiper-slide img {
+    width: 100%; /* 让图片自适应容器宽度 */
+    height: auto;
+  } 
+
+
+@media screen and (max-width:980px){
+    .images-inner{
+        height: 40vh;
+        background-size: cover;
+        background-position: center 60%;
+    }
+
+    .swiper-slide img {
+        height: 100vh;
+        object-fit: cover;
+      }
+
+}

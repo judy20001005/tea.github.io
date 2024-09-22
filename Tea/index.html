@@ -22,6 +22,11 @@
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+
 
 
 </head>
@@ -70,39 +75,36 @@
             </div>
         </div>
  
-        <div class="top">
-                <!-- 輪播圖 -->
-            <div id="demo" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                </div>
-
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="rwding" style="background-image: url(img/drink.jpg);">
-                            
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="rwding" style="background-image: url(img/top3.jpg);"></div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="rwding" style="background-image: url(img/top5.jpg);"></div>
-                    </div>
-                </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-
-
-            </div>            
+         <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/drink.jpg" alt="Slide 1"></div>
+            <div class="swiper-slide"><img src="img/top3.jpg" alt="Slide 2"></div>
+            <div class="swiper-slide"><img src="img/top5.jpg" alt="Slide 3"></div>
+            </div>
+            <!-- 添加分页器 -->
+            <div class="swiper-pagination"></div>
         </div>
+
+         <!-- Swiper's JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+              loop: true, // 无限循环
+              autoplay: {
+                delay: 3000, // 自动轮播，每3秒切换一次
+              },
+              pagination: {
+                el: '.swiper-pagination', // 启用分页器
+                clickable: true, // 允许用户点击分页器
+              },
+              navigation: {
+                nextEl: '.swiper-button-next', // 下一个按钮
+                prevEl: '.swiper-button-prev', // 上一个按钮
+              },
+            });
+          </script>
+        
 
         <div class="main" data-aos="fade-up" data-aos-duration="3000">
             <section class="about">
@@ -245,5 +247,8 @@
      <script>
        AOS.init();
      </script>
+	
+
+
 </body>
 </html>
