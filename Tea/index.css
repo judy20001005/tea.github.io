@@ -65,6 +65,7 @@
   .swiper-slide img {
     width: 100%; /* 让图片自适应容器宽度 */
     height: auto;
+    object-fit: cover;
   } 
 
 
@@ -77,7 +78,7 @@
 
     .swiper-slide img {
         height: 100vh;
-        object-fit: cover;
+        
       }
 
 }
