@@ -76,11 +76,11 @@
         </div>
  
          <!-- Swiper -->
-        <div class="swiper-container">
+        <div class="swiper">
             <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="img/drink.jpg"></div>
-            <div class="swiper-slide"><img src="img/top3.jpg"></div>
-            <div class="swiper-slide"><img src="img/top5.jpg"></div>
+                <div class="swiper-slide"><img src="img/drink.jpg"></div>
+                <div class="swiper-slide"><img src="img/top3.jpg"></div>
+                <div class="swiper-slide"><img src="img/top5.jpg"></div>
             </div>
             <!-- 添加分页器 -->
             <div class="swiper-pagination"></div>
@@ -88,22 +88,7 @@
 
          <!-- Swiper's JS -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script>
-            var swiper = new Swiper('.swiper-container', {
-              loop: true, // 无限循环
-              autoplay: {
-                delay: 3000, // 自动轮播，每3秒切换一次
-              },
-              pagination: {
-                el: '.swiper-pagination', // 启用分页器
-                clickable: true, // 允许用户点击分页器
-              },
-              navigation: {
-                nextEl: '.swiper-button-next', // 下一个按钮
-                prevEl: '.swiper-button-prev', // 上一个按钮
-              },
-            });
-          </script>
+        <script src="js/script.js"></script>
         
 
         <div class="main" data-aos="fade-up" data-aos-duration="3000">
