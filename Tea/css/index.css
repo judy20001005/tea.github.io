@@ -16,6 +16,13 @@
 .products-img {
     overflow: hidden;
 }
+.products-img img {
+    transform: scale(1);
+    transition: 1s ease-out;
+}
+.products-img img:hover {
+    transform: scale(1.2);
+}
 .product-info {
     padding: 15px 0 30px;
 }
@@ -37,6 +44,32 @@
     padding: 10px 0;
 }
 
+.swiper {
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 100% 40%;
+}
+  
+
+
+
+
 
 @media screen and (max-width:980px){
     .images-inner{
@@ -44,5 +77,12 @@
         background-size: cover;
         background-position: center 60%;
     }
+    .swiper-slide img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
 
 }
